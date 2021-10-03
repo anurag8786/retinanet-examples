@@ -11,12 +11,28 @@
 
 #include <cuda_runtime.h>
 
+#include "mqtt/async_client.h"
+
 #include "../../csrc/engine.h"
 
 using namespace std;
 using namespace cv;
 
+const std::string DFLT_ADDRESS { "tcp://localhost:1883" };
+const std::string CLIENT_ID { "paho-cpp-data-publish" };
+
+const string TOPIC { "Test" };
+const int	 QOS = 1;
+
 int main(int argc, char *argv[]) {
+	string address = (argc > 1) ? string(argv[1]) : DFLT_SERVER_ADDRESS;
+
+	cout << "Initializing for server '" << address << "'..." << endl;
+	mqtt::async_client cli(address, "");
+
+	cout << "\nConnecting..." << endl;
+	cli.connect()->wait();
+
 	if (argc != 3) {
 		cerr << "Usage: " << argv[0] << " engine.plan input.mov [Optional]threshold between 0-1" << endl;
 		return 1;
@@ -121,7 +137,27 @@ int main(int argc, char *argv[]) {
 				// Draw bounding box on image
 				cv::rectangle(resized_frame, Point(x1, y1), Point(x2, y2), cv::Scalar(blues[cls], greens[cls], reds[cls]));
 			}
+
+			try {
+				cout << "\nPublishing message..." << endl;
+
+				mqtt::topic top(cli, "test", QOS);
+				mqtt::token_ptr tok;
+
+				tok = top.publish("x1: " + x1 + ", y1: " + y1 + ", x2: " + x2 + ", y2: " + y2);
+				tok->wait();	// Just wait for the last one to complete.
+			}
+			catch (const mqtt::exception& exc) {
+				cerr << exc << endl;
+				return 1;
+			}
+
 		}
+
+		// Disconnect
+		cout << "\nDisconnecting..." << endl;
+		cli.disconnect()->wait();
+
 		cv::resize(resized_frame, inferred_frame, Size(fw, fh));
 		imshow(window_name, inferred_frame);
 		if (waitKey(10) ==27){
