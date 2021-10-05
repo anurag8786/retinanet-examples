@@ -1,0 +1,1000 @@
+  624  cd /root
+  625  ls
+  626  cd .docker
+  627  sudo ls
+  628  cd ~
+  629  chmod +x /retinanet-examples/setup.py
+  630  chmod +x retinanet-examples/setup.py
+  631  chmod +x retinanet-examples/retinanet
+  632  sudo docker build -t retinanet:latest retinanet-examples/
+  633  chmod +x retinanet-examples/retinanet/
+  634  sudo docker build -t retinanet:latest retinanet-examples/
+  635  cmake -DDeepStream_DIR=/opt/nvidia/deepstream/deepstream-5.0 .. && make -j
+  636  cd build
+  637  cmake -DDeepStream_DIR=/opt/nvidia/deepstream/deepstream-5.0 .. && make -j
+  638  cd ..
+  639  cd extras/cppapi
+  640  mkdir build && cd build
+  641  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  642  makecd ..
+  643  cd ..
+  644  cd extras/cppapi
+  645  mkdir build && cd build
+  646  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  647  makecd ..
+  648  cd ..
+  649  cd extras/cppapi
+  650  mkdir build && cd build
+  651  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  652  cd build
+  653  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  654  make
+  655  ./export stanford_resnext_50.onnx engine.plan
+  656  ./export stanford_resnext50.onnx engine.plan
+  657  export --help
+  658  ifconfig
+  659  sudo netstat -tulpn | grep LISTEN
+  660  cd Downloads
+  661  ls
+  662  sudo dpkg -i anydesk_6.0.1-1_amd64.deb
+  663  wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+  664  sudo wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+  665  wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY |sudo apt-key add -
+  666  echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+  667  sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+  668  sudo echo "deb http://deb.anydesk.com/ all main" >sudo /etc/apt/sources.list.d/anydesk-stable.list
+  669  echo "deb http://deb.anydesk.com/ all main" >sudo /etc/apt/sources.list.d/anydesk-stable.list
+  670  sudo apt update
+  671  sudo apt install anydesk
+  672  sudo apt update
+  673  sudo apt -y upgrade
+  674  ls
+  675  python3 -m pip install netron
+  676  netron
+  677  ./export stanford_resnext50.onnx engine.plan
+  678  python3
+  679  sudo ./export stanford_resnext50.onnx engine.plan
+  680  cuda
+  681  nvcc --version
+  682  locate cuda
+  683  nvcc --version
+  684  find / -name nvcc
+  685  /usr/local/cuda/bin/nvcc --version
+  686  dpkg -l | grep nvinfer
+  687  dpkg -l | grep TensorRT
+  688  sudo ./export stanford_resnext50.onnx engine.plan
+  689  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  690  make
+  691  sudo ./export stanford_resnext50.onnx engine.plan
+  692  521
+  693  sudo ./export stanford_resnext50.onnx engine.plan
+  694  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  695  make
+  696  sudo ./export stanford_resnext50.onnx engine.plan
+  697  sudo ./export ssd.onnx engine.plan
+  698  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  699  make
+  700  sudo ./export ssd.onnx engine.plan
+  701  sudo ./export ./ssd.onnx engine.plan
+  702  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  703  make
+  704  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  705  make
+  706  sudo ./export ./ssd.onnx engine.plan
+  707  pwd
+  708  sudo ./export /home/nx64/retinanet-examples/extras/cppapi/build/ssd.onnx engine.plan
+  709  sudo ./export /home/nx64/retinanet-examples/extras/cppapi/build/ssd1.onnx engine.plan
+  710  sudo ./export /home/nx64/retinanet-examples/extras/cppapi/build/model.onnx engine.plan
+  711  sudo nano engine.h
+  712  sudo nano engine.cpp
+  713  cd /etc
+  714  ls
+  715  cd docker
+  716  ls
+  717  sudo nano daemon.json
+  718  docker --version
+  719  cd ..
+  720  find
+  721  find onnxparser
+  722  find nvonnxparser
+  723  find -h nvonnxparser
+  724  find --help
+  725  find onnx
+  726  find csrc
+  727  find .onnx
+  728  find nvonnxparser.h
+  729  cd ~
+  730  find onnx
+  731  cd usr
+  732  cd /usr
+  733  cd local/include
+  734  ls
+  735  pwd
+  736  locate NvOnnxConfig
+  737  locate -i onnx2trt_utils.cpp
+  738  docker ps -a
+  739  sudo docker ps -a
+  740  docker images
+  741  sudo docker images
+  742  ls
+  743  python3 ONNX_runtime.py 
+  744  ./export stanford_resnext50.onnx exp.plan
+  745  make -j6
+  746  ./export stanford_resnext50.onnx exp.plan
+  747  make -j6
+  748  ./export stanford_resnext50.onnx exp.plan
+  749  make -j6
+  750  ./export stanford_resnext50.onnx exp.plan
+  751  ls
+  752  ./export retina_three.onnx exp.plan
+  753  grep -r -i "onnx2trt_utils.cpp" /
+  754  sudo grep -r -i "onnx2trt_utils.cpp" /
+  755  locate -i onnx2trt_utils.cpp
+  756  sudo apt-get install locate
+  757  locate -i onnx2trt_utils.cpp
+  758  sudo grep -r -i "onnx2trt_utils.cpp" /
+  759  make -j6
+  760  ./export stanford_resnext50.onnx exp.plan
+  761  make -j6
+  762  ./export stanford_resnext50.onnx exp.plan
+  763  make -j6
+  764  ./export stanford_resnext50.onnx exp.plan
+  765  make -j6
+  766  ./export stanford_resnext50.onnx exp.plan
+  767  make -j6
+  768  ./export stanford_resnext50.onnx exp.plan
+  769  make -j6
+  770  ./export stanford_resnext50.onnx exp.plan
+  771  cd ..
+  772  ls
+  773  cd Downloads/
+  774  ls
+  775  python3 build_engine.py 
+  776  ls
+  777  python3 build_engine.py 
+  778  pip install onnx
+  779  pip install onnxruntime
+  780  pip3 install onnxruntime_gpu-1.4.0-cp36-cp36m-linux_aarch64.whl
+  781  wget https://nvidia.box.com/shared/static/8sc6j25orjcpl6vhq3a4ir8v219fglng.whl -O onnxruntime_gpu-1.4.0-cp36-cp36m-linux_aarch64.whl
+  782  pip3 install onnxruntime_gpu-1.4.0-cp36-cp36m-linux_aarch64.whl
+  783  apt-get install -y python3-pip libprotobuf-dev protobuf-compiler python-scipy
+  784  sudo apt-get install -y python3-pip libprotobuf-dev protobuf-compiler python-scipy
+  785  sudo apt --fix-broken install
+  786  apt-get update && apt-get install -y python3-pip libprotobuf-dev protobuf-compiler python-scipy
+  787  apt-get update
+  788  sudo apt-get update
+  789  apt-get install -y python3-pip libprotobuf-dev protobuf-compiler python-scipy
+  790  sudo apt-get install -y python3-pip libprotobuf-dev protobuf-compiler python-scipy
+  791  python3 -m pip install onnx==1.6.0 easydict matplotlib
+  792  python3 -m pip3 install onnx==1.6.0 easydict matplotlib
+  793  pip3 install onnx==1.6.0 easydict matplotlib
+  794  sudo pip3 install onnx==1.6.0 easydict matplotlib
+  795  wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+  796  sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+  797  sudo apt-get update
+  798  sudo apt-get install atom
+  799  sudo apt-get update
+  800  sudo apt autoclean
+  801  sudo apt autoremove
+  802  sudo apt-get install atom
+  803  sudo apt-get -f install atom
+  804  cd
+  805  cd Downloads/
+  806  sudo dpkg -i atom-amd64.deb
+  807  sudo apt-get -f install
+  808  sudo dpkg -i atom-amd64.deb
+  809  uname -a
+  810  uname
+  811  sudo ./export stanford_resnext50.onnx engine1.plan
+  812  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  813  make -j6
+  814  sudo ./export stanford_resnext50.onnx engine1.plan
+  815  dpkg -l | grep TensorRT
+  816  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  817  make -j6
+  818  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  819  make -j6
+  820  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  821  make -j6
+  822  sudo ./export stanford_resnext50.onnx engine1.plan
+  823  make -j6
+  824  sudo ./export stanford_resnext50.onnx engine1.plan
+  825  make -j6
+  826  sudo ./export stanford_resnext50.onnx engine1.plan
+  827  make -j6
+  828  sudo ./export stanford_resnext50.onnx engine1.plan
+  829  make -j6
+  830  sudo ./export stanford_resnext50.onnx engine1.plan
+  831  cd /
+  832  sudo grep -R /usr sampleOnnxMNIST
+  833  sudo grep -R /usr -e sampleOnnxMNIST
+  834  cd /usr/src/tensorrt/samples/sampleOnnxMNIST/
+  835  ls
+  836  make
+  837  sudo make
+  838  sudo make -j6
+  839  cd ..
+  840  cd bin/
+  841  ./sample_onnx_mnist
+  842  cd ..
+  843  grep -R . -e 5.pgm
+  844  sudo ./sample_onnx_mnist
+  845  cd bin/
+  846  sudo ./sample_onnx_mnist
+  847  sudo ./sample_onnx_mnist --help
+  848  cd ..
+  849  grep -R . -e download_pgms.py
+  850  cd data/mnist/
+  851  ls
+  852  python3 download_pgms.py 
+  853  pip3 install pillow
+  854  python3 download_pgms.py 
+  855  sudo python3 download_pgms.py 
+  856  cd ../..
+  857  cd bin/
+  858  sudo ./sample_onnx_mnist
+  859  ./export stanford_resnext50.onnx engine.plan
+  860  ifconfig
+  861  find / NvOnnxConfig.h
+  862  find / NvOnnxParser.h
+  863  grep -r -i "NvOnnxParser.h
+  864  grep -r -i "NvOnnxParser.h"
+  865  grep -r -i "NvOnnxParser.h" /
+  866  sudo grep -r -i "NvOnnxParser.h" /
+  867  sudo grep -r -i "iostream" /
+  868  sudo grep -r -i "getInput" /
+  869  cd ..
+  870  grep -R . -e createInferBuilder
+  871  sudo grep -R / -e createInferBuilder
+  872  sudo grep -R /usr -e createInferBuilder
+  873  cd /usr/include/aarch64-linux-gnu/
+  874  open .
+  875  nautilus .
+  876  pip install numpy
+  877  python
+  878  pip
+  879  pip --versio
+  880  pip install numpy=1.18
+  881  pip install numpy==1.18
+  882  ./infervideo retina.plan 100m-1.mp4 out.mp4
+  883  make
+  884  ./infervideo retina.plan 100m-1.mp4 out.mp4
+  885  python3 ONNX_runtime.py 
+  886  python3
+  887  python3 ONNX_runtime.py 
+  888  python
+  889  python3
+  890  python ONNX_runtime.py 
+  891  sudo apt-get install python3
+  892  sudo apt install python
+  893  python3
+  894  import cv2
+  895  python3
+  896  pip3 install numpy==1.18.0
+  897  python3
+  898  python3 ONNX_runtime.py 
+  899  wget https://nvidia.box.com/shared/static/49fzcqa1g4oblwxr3ikmuvhuaprqyxb7.whl -O onnxruntime_gpu-1.6.0-cp36-cp36m-linux_aarch64.whl
+  900  pip3 install onnxruntime_gpu-1.6.0-cp36-cp36m-linux_aarch64.whl
+  901  python3 ONNX_runtime.py 
+  902  clear
+  903  python3
+  904  sudo apt-get install python-pip protobuf-compiler libprotoc-dev
+  905  pip install onnx
+  906  pip install onnx==1.6
+  907  pip3 install onnx==1.6
+  908  python3 build_engine.py 
+  909  sudo nano inferRT.py
+  910  python3 build_engine.py 
+  911  nano inferRT.py
+  912  docker ps
+  913  sudo docker ps
+  914  grep -r "libretinanet.so" /
+  915  sudo grep -r "libretinanet.so" /
+  916  trt_infer
+  917  python3 trt_infer.py
+  918  ./export stanford_resnext50.onnx exp.plan
+  919  make -j6
+  920  ./export stanford_resnext50.onnx exp.plan
+  921  make -j6
+  922  ./export stanford_resnext50.onnx exp.plan
+  923  make -j6
+  924  ./export stanford_resnext50.onnx exp.plan
+  925  make -j6
+  926  ./export stanford_resnext50.onnx exp.plan
+  927  make -j6
+  928  ./export stanford_resnext50.onnx exp.plan
+  929  make -j6
+  930  ./export stanford_resnext50.onnx exp.plan
+  931  make -j6
+  932  ./export stanford_resnext50.onnx exp.plan
+  933  python3 inferRT.py 
+  934  pip3 install numpy pycuda
+  935  gedit ~/.bashrc
+  936  sudo nano ~/.bashrc
+  937  python3 inferRT.py 
+  938  pip3 install pycuda
+  939  sudo nano ~/.bashrc
+  940  export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
+  941  export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+  942  pip3 install pycuda
+  943  pip3 install — upgrade pip
+  944  pip3 install — upgrade pip3
+  945  pip3 install -- upgrade pip3
+  946  pip3 install -- upgrade pip
+  947  pip install --upgrade pip
+  948  pip3 install --upgrade pip
+  949  pip3 install --upgrade pip3
+  950  sudo apt-get install scipy
+  951  python3 inferRT.py 
+  952  pip install skimage
+  953  pip3 install skimage
+  954  pip3 install cikit-image
+  955  pip3 install scikit-image
+  956  python3 inferRT.py 
+  957  trtexec
+  958  trtexec --explicitBatch
+  959  cd ..
+  960  trtexec --explicitBatch
+  961  ls
+  962  mkdir build && cd build
+  963  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  964  make
+  965  ./export stanford_resnext50.onnx exp.plan
+  966  ./export retina_three.onnx exp.plan
+  967  ./infer exp.plan 1.jpg
+  968  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  969  make -j6
+  970  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  971  make -j6
+  972  mkdir build && cd build
+  973  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  974  make -j6
+  975  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++11" ..
+  976  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+  977  make
+  978  cd ~
+  979  git clone --single-branch --branch 20.03 https://github.com/NVIDIA/retinanet-examples retina20.03
+  980  ./export stanford_resnext50.onnx exp.plan
+  981  make -j6
+  982  ./export stanford_resnext50.onnx exp.plan
+  983  trtexec
+  984  ./export stanford_resnext50.onnx exp.plan
+  985  make -j6
+  986  ./export stanford_resnext50.onnx exp.plan
+  987  make -j6
+  988  ./export stanford_resnext50.onnx exp.plan
+  989  make -j6
+  990  ./export stanford_resnext50.onnx exp.plan
+  991  make -j6
+  992  ./export stanford_resnext50.onnx exp.plan
+  993  make -j6
+  994  ./export stanford_resnext50.onnx exp.plan
+  995  make -j6
+  996  cd ~
+  997  git clone https://github.com/NVIDIA/retinanet-examples retina-exp
+  998  gcc --version
+  999  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1000  make -j6
+ 1001  pwd
+ 1002  ./infervideo exp.plan gopro.mp4 out.mp4
+ 1003  tail output.log
+ 1004  tail -f output.log
+ 1005  tail ./output.log
+ 1006  ./infervideo exp.plan gopro.mp4 out.mp4
+ 1007  cd build
+ 1008  ./infervideo exp.plan gopro.mp4 out.mp4
+ 1009  ifconfig
+ 1010  ./infervideo exp.plan gopro.mp4 out.mp4 > output.log
+ 1011  ./infervideo exp.plan gopro.mp4 out.mp
+ 1012  ./infervideo exp.plan gopro.mp4 out.mp4
+ 1013  ls
+ 1014  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1015  make
+ 1016  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1017  make
+ 1018  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1019  make
+ 1020  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1021  make
+ 1022  ./inferlive exp.plan gopro.mp4 
+ 1023  nvidia-smi
+ 1024  cout <<"Resolution" << inputSize[0] << "*" << inputSize[1] << endl;
+ 1025  String window_name = "Output Stream";
+ 1026  namedWindow(window_name, WINDOW_NORMAL);
+ 1027  sudo -H pip install -U jetson-stats
+ 1028  sudo jtop
+ 1029  sudo systemctl restart jetson_stats.service
+ 1030  sudo jtop
+ 1031  jtop
+ 1032  ./inferlive exp.plan gopro.mp4 
+ 1033  cd build/
+ 1034  ./inferlive exp.plan gopro.mp4 
+ 1035  sudo jtop
+ 1036  ifconfig
+ 1037  sudo jtop
+ 1038  jtop
+ 1039  gst-launch-1.0 -v filesrc location = file_name.mp4 ! decodebin ! x264enc ! rtph264pay ! udpsink host=192.1XX.XX.XX port=9001
+ 1040  gst-launch-1.0 -v filesrc location = gopro.mp4 ! decodebin ! x264enc ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1041  gst-launch-1.0 -v udpsrc port=9001 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtpstreamdepay ! decodebin ! videoconvert ! autovideosink
+ 1042  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! autovideosink
+ 1043  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1044  make
+ 1045  ./inferlive exp.plan gopro.mp4 
+ 1046  sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
+ 1047  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1048  make
+ 1049  ./inferlive exp.plan gopro.mp4 
+ 1050  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1051  make
+ 1052  ./inferlive exp.plan gopro.mp4 
+ 1053  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1054  make
+ 1055  ./inferlive exp.plan gopro.mp4 
+ 1056  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1057  make
+ 1058  ./inferlive exp.plan gopro.mp4 
+ 1059  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1060  make
+ 1061  ./inferlive exp.plan gopro.mp4 
+ 1062  make
+ 1063  ./inferlive exp.plan gopro.mp4 
+ 1064  gst-launch-1.0 v4l2src !
+ 1065  video/x-raw-yuv,width=128,height=96,format='(fourcc)'UYVY !
+ 1066  videoconvert ! ffenc_h263 ! video/x-h263 ! rtph263ppay pt=96 !
+ 1067  udpsink host=192.168.1.1 port=5000 sync=false
+ 1068  gst-launch-1.0 v4l2src ! video/x-raw-yuv,width=128,height=96,format='(fourcc)'UYVY ! videoconvert ! ffenc_h263 ! video/x-h263 ! rtph263ppay pt=96 ! udpsink host=192.168.1.1 port=5000 sync=false
+ 1069  gst-launch-1.0 filesrc location=videofile.mpg ! dvddemux ! mpeg2dec !
+ 1070  gst-launch-1.0 filesrc location=gopro.mp4 ! dvddemux ! mpeg2dec ! xvimagesink
+ 1071  gst-launch-1.0 filesrc location=gopro.mp4 ! mpeg2dec ! xvimagesink
+ 1072  gst-launch-1.0 filesrc location=gopro.mp4 ! dvddemux ! mpeg2dec ! xvimagesink
+ 1073  ls
+ 1074  gst-launch-1.0 v4l2src ! video/x-raw-yuv,width=128,height=96,format='(fourcc)'UYVY ! videoconvert ! ffenc_h263 ! video/x-h263 ! rtph263ppay pt=96 ! udpsink host=192.168.1.1 port=5000 sync=false
+ 1075  gst-launch-1.0 v4l2src ! video/x-raw,width=128,height=96,format='(fourcc)'UYVY ! videoconvert ! ffenc_h263 ! video/x-h263 ! rtph263ppay pt=96 ! udpsink host=192.168.1.1 port=5000 sync=false
+ 1076  gst-launch-1.0 v4l2src ! video/x-raw,format='(fourcc)'UYVY ! videoconvert ! ffenc_h263 ! video/x-h263 ! rtph263ppay pt=96 ! udpsink host=192.168.1.1 port=5000 sync=false
+ 1077  gst-launch-1.0 -v udpsrc ! video/x-raw,framerate=20/1 ! videoscale ! videoconvert ! x264enc tune=zerolatency bitrate=500 speed-preset=superfast ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1078  gst-launch-1.0 -v udpsrc port=9001 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtpstreamdepay ! decodebin ! videoconvert ! autovideosink
+ 1079  gst-launch-1.0 -v filesrc location = file_name.mp4 ! decodebin ! x264enc ! rtph264pay ! udpsink host=192.1XX.XX.XX port=9001
+ 1080  gst-launch-1.0 -v filesrc location =goproe.mp4 ! decodebin ! x264enc ! rtph264pay ! udpsink host=192.1XX.XX.XX port=9001
+ 1081  gst-launch-1.0 -v filesrc location =gopro.mp4 ! decodebin ! x264enc ! rtph264pay ! udpsink host=192.1XX.XX.XX port=9001
+ 1082  gst-launch-1.0 -v filesrc location = file_name.mp4 ! decodebin ! x264enc ! rtph264pay ! udpsink host=192.1XX.XX.XX port=9001
+ 1083  gst-launch-1.0 -v ximagesrc ! video/x-raw,framerate=20/1 ! videoscale ! videoconvert ! x264enc tune=zerolatency bitrate=500 speed-preset=superfast ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1084  gst-launch-1.0 -v filesrc location = gopro.mp4 ! video/x-raw,framerate=20/1 ! videoscale ! videoconvert ! x264enc tune=zerolatency bitrate=500 speed-preset=superfast ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1085  gst-launch-1.0 -v filesrc location = file_name.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=9001
+ 1086  gst-launch-1.0 -v filesrc location =gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=9001
+ 1087  gst-launch-1.0 -v filesrc location =gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=9001
+ 1088  python3
+ 1089  gst-launch-1.0 -v filesrc location =gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=9001
+ 1090  conda
+ 1091  source 
+ 1092  clear
+ 1093  cd Do
+ 1094  cd Downloads/
+ 1095  python3
+ 1096  dpkg-config --modversion opencv
+ 1097  dpkg -l | grep libopencv
+ 1098  ls
+ 1099  sudo rm -r files
+ 1100  ls
+ 1101  sudo rm -r retinanet-examples
+ 1102  ls
+ 1103  ./inferlive exp.plan 0
+ 1104  make
+ 1105  ./inferlive exp.plan gopro.mp4
+ 1106  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1107  cd build
+ 1108  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1109  make
+ 1110  ./infercam exp.plan
+ 1111  ls
+ 1112  python3
+ 1113  ./inferlive exp.plan infrared.mp4
+ 1114  make
+ 1115  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1116  sudo apt-get remove opencv
+ 1117  ./infervideo exp.plan infrared.mp4 out.mp4
+ 1118  python3
+ 1119  ls
+ 1120  sudo rm -r build
+ 1121  ls
+ 1122  mkdir build
+ 1123  sudo make install
+ 1124  sudo make -j$(nproc)
+ 1125  cd ..
+ 1126  mkdir build
+ 1127  cd build
+ 1128  cmake -D CMAKE_BUILD_TYPE=RELEASE -D INSTALL_PYTHON_EXAMPLES=ON -D INSTALL_C_EXAMPLES=OFF -D PYTHON_EXECUTABLE=$(which python3) -D BUILD_opencv_python2=OFF -D CMAKE_INSTALL_PREFIX=$(python3 -c “import sys; print(sys.prefix)”) -D PYTHON3_EXECUTABLE=$(which python3) -D PYTHON3_INCLUDE_DIR=$(python3 -c “from distutils.sysconfig import get_python_inc; print(get_python_inc())”) -D PYTHON3_PACKAGES_PATH=$(python3 -c “from distutils.sysconfig import get_python_lib; print(get_python_lib())”) -D WITH_GSTREAMER=ON \
+ 1129  mkdir build
+ 1130  cd build
+ 1131  cmake -D CMAKE_BUILD_TYPE=RELEASE -D INSTALL_PYTHON_EXAMPLES=ON -D INSTALL_C_EXAMPLES=OFF -D PYTHON_EXECUTABLE=$(which python3) -D BUILD_opencv_python2=OFF -D CMAKE_INSTALL_PREFIX=$(python3 -c “import sys; print(sys.prefix)”) -D PYTHON3_EXECUTABLE=$(which python3) -D PYTHON3_INCLUDE_DIR=$(python3 -c “from distutils.sysconfig import get_python_inc; print(get_python_inc())”) -D PYTHON3_PACKAGES_PATH=$(python3 -c “from distutils.sysconfig import get_python_lib; print(get_python_lib())”) -D WITH_GSTREAMER=ON 
+ 1132  python3 -c “import sys; print(sys.prefix)
+ 1133  python3
+ 1134  which python3
+ 1135  cd ..
+ 1136  nano cmake_cmd.txt
+ 1137  cat cmake_cmd.txt 
+ 1138  cd build
+ 1139  cmake -D CMAKE_BUILD_TYPE=RELEASE -D INSTALL_PYTHON_EXAMPLES=ON -D INSTALL_C_EXAMPLES=OFF -D PYTHON_EXECUTABLE=/usr/bin/python3 -D BUILD_opencv_python2=OFF -D CMAKE_INSTALL_PREFIX=/usr -D PYTHON3_EXECUTABLE=/usr/bin/python3 -D PYTHON3_INCLUDE_DIR=/usr/include/python3.6m -D PYTHON3_PACKAGES_PATH=/usr/lib/python3/dist-packages -D WITH_GSTREAMER=ON -D BUILD_EXAMPLES=ON ..
+ 1140  sudo make -j6
+ 1141  sudo make install
+ 1142  sudo ldconfig
+ 1143  python3
+ 1144  sudo ldconfig
+ 1145  sudo make uninstall
+ 1146  python3
+ 1147  sudo apt uninstall opencv
+ 1148  sudo apt-get uninstall opencv
+ 1149  cmake ../opencv
+ 1150  cmake opencv
+ 1151  cd ..
+ 1152  cmake ../opencv
+ 1153  cmake-gui
+ 1154  cd build/
+ 1155  cmake-gui
+ 1156  cmake
+ 1157  cmake --help
+ 1158  sudo apt-get install cmake
+ 1159  sudo apt-get install cmake-gui
+ 1160  cmake-gui
+ 1161  cmake .
+ 1162  cmake-gui
+ 1163  cmake .
+ 1164  ls
+ 1165  cd ..
+ 1166  cd build/
+ 1167  cmake .
+ 1168  sudo apt-get autoremove opencv-doc opencv-data libopencv-dev libopencv2.4-java libopencv2.4-jni python-opencv libopencv-core2.4 libopencv-gpu2.4 libopencv-ts2.4 libopencv-photo2.4 libopencv-contrib2.4 libopencv-imgproc2.4 libopencv-superres2.4 libopencv-stitching2.4 libopencv-ocl2.4 libopencv-legacy2.4 libopencv-ml2.4 libopencv-video2.4 libopencv-videostab2.4 libopencv-objdetect2.4 libopencv-calib3d2.4
+ 1169  cd opencv/
+ 1170  cd bui
+ 1171  cd build
+ 1172  ls
+ 1173  cmake-gui
+ 1174  ls
+ 1175  cd ..
+ 1176  ls
+ 1177  rm -r build/
+ 1178  ls
+ 1179  mkdir build
+ 1180  ls
+ 1181  cd build/
+ 1182  ls
+ 1183  cmake -D CMAKE_BUILD_TYPE=RELEASE -D INSTALL_PYTHON_EXAMPLES=ON -D INSTALL_C_EXAMPLES=OFF -D PYTHON_EXECUTABLE=/usr/bin/python3 -D BUILD_opencv_python2=OFF -D CMAKE_INSTALL_PREFIX=/usr -D PYTHON3_EXECUTABLE=/usr/bin/python3 -D PYTHON3_INCLUDE_DIR=/usr/include/python3.6m -D PYTHON3_PACKAGES_PATH=/usr/lib/python3/dist-packages -D WITH_GSTREAMER=ON -D BUILD_EXAMPLES=ON -D WITH_FFMPEG=ON -D BUILD_opencv_highgui = ON ..
+ 1184  cmake -D CMAKE_BUILD_TYPE=RELEASE -D INSTALL_PYTHON_EXAMPLES=ON -D INSTALL_C_EXAMPLES=OFF -D PYTHON_EXECUTABLE=/usr/bin/python3 -D BUILD_opencv_python2=OFF -D CMAKE_INSTALL_PREFIX=/usr -D PYTHON3_EXECUTABLE=/usr/bin/python3 -D PYTHON3_INCLUDE_DIR=/usr/include/python3.6m -D PYTHON3_PACKAGES_PATH=/usr/lib/python3/dist-packages -D WITH_GSTREAMER=ON -D BUILD_EXAMPLES=ON -D WITH_FFMPEG=ON -D BUILD_opencv_highgui=ON ..
+ 1185  ls
+ 1186  cmake -D CMAKE_BUILD_TYPE=RELEASE -D INSTALL_PYTHON_EXAMPLES=ON -D INSTALL_C_EXAMPLES=OFF -D PYTHON_EXECUTABLE=/usr/bin/python3 -D BUILD_opencv_python2=OFF -D CMAKE_INSTALL_PREFIX=/usr -D PYTHON3_EXECUTABLE=/usr/bin/python3 -D PYTHON3_INCLUDE_DIR=/usr/include/python3.6m -D PYTHON3_PACKAGES_PATH=/usr/lib/python3/dist-packages -D WITH_GSTREAMER=ON -D BUILD_EXAMPLES=ON -D WITH_FFMPEG=ON -D BUILD_opencv_highgui=ON ..
+ 1187  sudo make -j6
+ 1188  python3
+ 1189  sudo make install
+ 1190  sudo ldconfig
+ 1191  python3
+ 1192  gst-launch-1.0 -v filesrc location =gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=5000
+ 1193  cd ../..
+ 1194  cd retina20.03/extras/cppapi/build/
+ 1195  gst-launch-1.0 -v filesrc location =gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=5000
+ 1196  gst-launch-1.0 -v filesrc location =gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! autovideosrc
+ 1197  gst-launch-1.0 -v filesrc location =gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! videosrc
+ 1198  gst-launch-1.0 v4l2src ! xvimagesink
+ 1199  gst-launch videotestsrc pattern=snow ! ximagesink
+ 1200  gst-launch-1.0 videotestsrc pattern=snow ! ximagesink
+ 1201  gst-launch-1.0 video ! appsink
+ 1202  gst-launch-1.0 filesrc location=gopro.mp4 ! ximagesink
+ 1203  gst-launch-1.0 filesrc location=gopro.mp4 ! appsink
+ 1204  gst-launch-1.0 filesrc location=gopro.mp4 ! ximagesink
+ 1205  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! ximagesink
+ 1206  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! ximagesink
+ 1207  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! ximagesink
+ 1208  gst-launch-1.0 -v filesrc location = gopro.mp4 ! ximagesink
+ 1209  gst-launch-1.0 videotestsrc ! videoconvert ! autovideosink
+ 1210  gst-launch-1.0 videotestsrc ! videoconvert ! ximagesink
+ 1211  gst-launch-1.0 -v filesrc location = gopro.mp4 ! videoconvert ! ximagesink
+ 1212  gst-launch-1.0 -v filesrc location = gopro.mp4 ! videoconvert ! autovideosink
+ 1213  gst-discoverer-1.0 -v filesrc location = gopro.mp
+ 1214  gst-discoverer-1.0 -v filesrc location = gopro.mp4
+ 1215  gst-discoverer-1.0 -vgopro.mp4
+ 1216  gst-discoverer-1.0 -v gopro.mp4
+ 1217  gst-launch-1.0 -v filesrc location=gopro.mp4 ! matroskademux ! decodebin ! videoconvert ! ximagesink
+ 1218  gst-launch-1.0 -v filesrc location=gopro.mp4 ! qtdemux ! decodebin ! videoconvert ! ximagesink
+ 1219  gst-launch-1.0 -v filesrc location=gopro.mp4 ! decodebin ! videoconvert ! ximagesink
+ 1220  gst-launch-1.0 -v filesrc location=gopro.mp4 ! matroskademux ! decodebin ! videoconvert ! appsink
+ 1221  gst-launch-1.0 -v filesrc location=gopro.mp4 ! matroskademux ! decodebin ! videoconvert ! ximagesink
+ 1222  gst-launch-1.0 -v filesrc location=Calibration_footage.mp4 ! qtdemux ! queue ! h264parse ! omxh264dec ! nvvidconv ! video/x-raw,format=BGRx ! queue ! videoconvert ! queue ! video/x-raw, format=BGR ! ximagesink
+ 1223  gst-launch-1.0 -v filesrc location=gopro.mp4 ! qtdemux ! queue ! h264parse ! omxh264dec ! nvvidconv ! video/x-raw,format=BGRx ! queue ! videoconvert ! queue ! video/x-raw, format=BGR ! ximagesink
+ 1224  ./inferlive exp.plan gopro.mp4 
+ 1225  cd ..
+ 1226  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1227  cd ..
+ 1228  cd cppapi
+ 1229  cd build
+ 1230  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1231  cd ~/retina20.03/extras/cppapi/build
+ 1232  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1233  make -j6
+ 1234  ./inferlive exp.plan gopro.mp4 
+ 1235  ./inferlive exp.plan ""
+ 1236  ./inferlive exp.plan "autovideosrc ! videoconvert ! appsink"
+ 1237  ./inferlive exp.plan "udpsrc port = 5000 ! videoconvert ! appsink"
+ 1238  ./inferlive exp.plan "udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! appsink"
+ 1239  ./inferlive ! appsink"
+ 1240  ./inferlive exp.plan "videotestsrc ! appsink"
+ 1241  ./inferlive exp.plan "filesrc location=gopro.mp4 ! appsink"
+ 1242  ./inferlive exp.plan "filesrc location=gopro.mp4 ! qtdemux ! queue ! h264parse ! omxh264dec ! nvvidconv ! video/x-raw,format=BGRx ! queue ! videoconvert ! queue ! video/x-raw, format=BGR ! appsink"
+ 1243  ./infervideo exp.plan "filesrc location=gopro.mp4 ! qtdemux ! queue ! h264parse ! omxh264dec ! nvvidconv ! video/x-raw,format=BGRx ! queue ! videoconvert ! queue ! video/x-raw, format=BGR ! appsink" out.mp4
+ 1244  ./inferlive exp.plan "filesrc location=gopro.mp4 ! qtdemux ! queue ! h264parse ! omxh264dec ! nvvidconv ! video/x-raw,format=BGRx ! queue ! videoconvert ! queue ! video/x-raw, format=BGR ! appsink"
+ 1245  ./inferlive exp.plan gopro.mp4
+ 1246  ./inferlive exp.plan "filesrc location=gopro.mp4 ! qtdemux ! queue ! h264parse ! omxh264dec ! nvvidconv ! video/x-raw,format=BGRx ! queue ! videoconvert ! queue ! video/x-raw, format=BGR ! appsink"
+ 1247  ./inferlive exp.plan "filesrc location=gopro.mp4 ! qtdemux ! h264parse ! omxh264dec ! nvvidconv ! video/x-raw,format=BGRx ! videoconvert ! queue ! video/x-raw, format=BGR ! appsink"
+ 1248  ./inferlive exp.plan infrared.mp4
+ 1249  ./inferlive exp.plan gopro.mp4
+ 1250  ./inferlive exp.plan infrared.mp4
+ 1251  ./inferlive exp.plan "udpsrc port=5000 ! qtdemux ! queue ! h264parse ! omxh264dec ! nvvidconv ! video/x-raw,format=BGRx ! queue ! videoconvert ! queue ! video/x-raw, format=BGR ! appsink"
+ 1252  ./inferlive exp.plan "udpsrc port=5000 ! rtph264depay ! decodebin ! videoconvert ! appsink"
+ 1253  ./inferlive exp.plan "udpsrc port=5000 ! decodebin ! videoconvert ! appsink"
+ 1254  ./inferlive exp.plan "udpsrc port=5000! videoconvert ! appsink"
+ 1255  ./inferlive exp.plan "udpsrc port=5000 ! videoconvert ! appsink"
+ 1256  ./inferlive exp.plan "udpsrc port=5000 ! appsink"
+ 1257  ./inferlive exp.plan "udpsrc port=5000 ! rtph264depay ! decodebin ! videoconvert ! appsink"
+ 1258  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! ximagesink
+ 1259  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! autovideosink
+ 1260  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! ximagesink
+ 1261  gst-launch-1.0 -v udpsrc port=5000 ! rtph264depay ! decodebin ! videoconvert ! appsink
+ 1262  gst-launch-1.0 -v udpsrc port=5000 ! rtph264depay ! decodebin ! videoconvert ! ximagesink
+ 1263  gst-launch-1.0 -v udpsrc port=5000 ! rtph264depay ! decodebin ! videoconvert ! autovideosink
+ 1264  gst-launch-1.0 -v udpsrc port=9000 ! rtph264depay ! decodebin ! videoconvert ! autovideosink
+ 1265  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! autovideosink
+ 1266  gst-launch-1.0 -v udpsrc port=5000 ! ximagesink
+ 1267  gst-launch-1.0 -v videotestsrc ! ximagesink
+ 1268  gst-launch-1.0 -v udpsrc port=5000 ! ximagesink
+ 1269  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! autovideosink
+ 1270  gst-launch-1.0 -v udpsrc port=9001 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! autovideosink
+ 1271  gst-launch-1.0 -v udpsrc port=9001 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! ximagesink
+ 1272  gst-launch-1.0 -v videotestsrc ! rtmpsink location='rtmp://localhost live=1'
+ 1273  gst-launch-1.0 -v videotestsrc ! flvmux ! rtmpsink location='rtmp://localhost live=1'
+ 1274  gst-launch-1.0 -v videotestsrc ! ffenc_flv ! flvmux ! rtmpsink location='rtmp://localhost/path/to/stream live=1
+ 1275  '
+ 1276  gst-launch-1.0 -v audiotestsrc ! udpsink
+ 1277  gst-launch-1.0 -v videotestsrc ! udpsink
+ 1278  gst-launch-1.0 -v filesrc ! udpsink
+ 1279  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! autovideosink
+ 1280  gst-launch-1.0 testvideosrc ! ximagesink
+ 1281  gst-launch-1.0 videotestsrc ! ximagesink
+ 1282  gst-launch-1.0 fakesrc ! ximagesink
+ 1283  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! ximagesink
+ 1284  gst-launch-1.0 -v udpsrc port=5000 ! rtph264depay ! decodebin ! videoconvert ! ximagesink
+ 1285  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! ximagesink
+ 1286  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! xvimagesink
+ 1287  gst-launch-1.0 udpsrc port=1234 ! "application/x-rtp, payload=127" ! rtph264depay ! ffdec_h264 ! xvimagesink sync=false
+ 1288  gst-launch-1.0 udpsrc port=1234 ! "application/x-rtp, payload=127" ! rtph264depay  ! xvimagesink sync=false
+ 1289  gst-launch-1.0 udpsrc port=1234 ! "application/x-rtp, payload=127" ! rtph264depay  ! decodebin ! xvimagesink sync=false
+ 1290  gst-launch-1.0 udpsrc port=1234 ! "application/x-rtp, payload=127" ! rtph264depay  ! decodebin ! videoconvert ! xvimagesink sync=false
+ 1291  gst-launch-1.0 -v videotestsrc ! xvimagesink
+ 1292  gst-launch-1.0 -v videotestsrc ! ximagesink
+ 1293  gst-launch-1.0 udpsrc port=1234 ! "application/x-rtp, payload=127" ! rtph264depay ! ffdec_h264 ! xvimagesink sync=false
+ 1294  gst-launch-1.0 udpsrc port=1234 ! "application/x-rtp, payload=127" ! rtph264depay ! decodebin ! videoconvert ! xvimagesink sync=false
+ 1295  gst-launch-1.0 -v udpsrc port=1234 caps = "application/x-rtp, media=(string)video, encoding-name=(string)H264, payload=(int)127" ! rtph264depay ! decodebin ! videoconvert ! xvimagesink
+ 1296  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! autovideosink
+ 1297  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! xvimagesink
+ 1298  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! ximagesink
+ 1299  gst-launch-1.0 -v udpsrc port=5000 ! rtph264depay ! decodebin ! videoconvert ! ximagesink
+ 1300  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! appsink
+ 1301  ./inferlive exp.plan "gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000"
+ 1302  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! appsink
+ 1303  ./inferlive exp.plan "udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! appsink"
+ 1304  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! rtph264depay ! decodebin ! videoconvert ! appsink"
+ 1305  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! appsink
+ 1306  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! nvoverlaysink
+ 1307  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! xvimagesink
+ 1308  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! xvimagesink sync=false
+ 1309  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! xvimagesink sync=false
+ 1310  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! h264parse ! avdec_h264 ! xvimagesink sync=false
+ 1311  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! h264parse ! nvv4l2decoder ! xvimagesink sync=false
+ 1312  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! h264parse ! nvv4l2decoder ! nvoverlaysink sync=false
+ 1313  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! h264parse ! nvv4l2decoder ! appsink
+ 1314  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! rtph264depay ! h264parse ! nvv4l2decoder ! appsink"
+ 1315  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! rtph264depay ! h264parse ! navdev_h264 ! appsink"
+ 1316  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! rtph264depay ! h264parse ! avdev_h264 ! appsink"
+ 1317  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! rtph264depay ! h264parse ! avdec_h264 ! appsink"
+ 1318  ./inferlive exp.plan "udpsrc port=5600 ! application/x-rtp, payload=96, encoding-name=H264 ! rtph264depay ! h264parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
+ 1319  udpsrc port=5600 ! application/x-rtp, payload=96, encoding-name=H264 ! rtpjitterbuffer mode=1 ! rtph264depay ! h264parse ! avdec_h264 ! decodebin ! videoconvert ! appsink max-buffers=2 drop=true emit-signals=true sync=false"
+ 1320  ./inferlive exp.plan "udpsrc port=5600 ! application/x-rtp, payload=96, encoding-name=H264 ! rtpjitterbuffer mode=1 ! rtph264depay ! h264parse ! avdec_h264 ! decodebin ! videoconvert ! appsink max-buffers=2 drop=true emit-signals=true sync=false"
+ 1321  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! h264parse ! avdec_h264 ! xvimagesink sync=false
+ 1322  gst-launch-1.0 -v udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! h264parse ! avdec_h264 ! appsink sync=false
+ 1323  ./inferlive exp.plan "udpsrc port=5000 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! h264parse ! avdec_h264 ! appsink sync=false"
+ 1324  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! rtph264depay ! h264parse ! avdec_h264 ! appsink sync=false"
+ 1325  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! rtph264depay ! h264parse ! avdec_h264 ! decodebin ! videoconvert ! appsink sync=false"
+ 1326  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! rtph264depay ! h264parse ! avdec_h264 ! decodebin ! videoconvert ! appsink"
+ 1327  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! queue ! rtph264depay ! h264parse ! avdec_h264 ! decodebin ! videoconvert ! appsink"
+ 1328  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! rtph264depay ! h264parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
+ 1329  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! queue ! rtph264depay ! h264parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
+ 1330  ls
+ 1331  cd retina20.03/extras/cppapi/build/
+ 1332  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=5000
+ 1333  gst-inspect-1.0 | grep sink
+ 1334  gst-inspect-1.0 | grep src
+ 1335  gst-inspect-1.0 src
+ 1336  gst-inspect-1.0 rtmpsrc
+ 1337  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=5000
+ 1338  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=LOCALHOST port=5000
+ 1339  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=localhost port=5000
+ 1340  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=5000
+ 1341  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=9000
+ 1342  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=5000
+ 1343  gst-launch-1.0 -v videotestsrc ! udpsink host=192.1XX.XX.XX port=5000
+ 1344  gst-launch-1.0 -v videotestsrc ! udpsink host=localhost port=5000
+ 1345  gst-launch-1.0 -v videotestsrc ! rtph264pay  ! udpsink host=localhost port=5000
+ 1346  gst-launch-1.0 -v videotestsrc ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=localhost port=5000
+ 1347  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=5000
+ 1348  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=5000gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=5000
+ 1349  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=5000
+ 1350  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=9001
+ 1351  gst-launch-1.0 -v gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=9001
+ 1352  gst-launch-1.0 -v filesrc gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=9001
+ 1353  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=9001
+ 1354  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1355  gst-launch-1.0 -v videotestsrc ! 'video/x-raw-yuv' !  x264enc pass=qual quantizer=20 tune=zerolatency ! rtph264pay ! udpsink host=127.0.0.1 port=1234
+ 1356  gst-launch-1.0 -v videotestsrc !  x264enc pass=qual quantizer=20 tune=zerolatency ! rtph264pay ! udpsink host=127.0.0.1 port=1234
+ 1357  gst-launch-1.0 v4l2src !
+ 1358  video/x-raw-yuv,width=128,height=96,format='(fourcc)'UYVY !
+ 1359  videoconvert ! ffenc_h263 ! video/x-h263 ! rtph263ppay pt=96 !
+ 1360  udpsink host=192.168.1.1 port=5000 sync=false
+ 1361  gst-launch-1.0 videotestsrc ! udpsink host=127.0.0.1 port=5000
+ 1362  gst-launch-1.0 videotestsrc ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1363  gst-launch-1.0 videotestsrc ! video/x-264  ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1364  gst-launch-1.0 videotestsrc ! videoconvert ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1365  gst-launch-1.0 videotestsrc ! videoconvert ! video/x-264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1366  gst-launch-1.0 videotestsrc ! videoconvert ! video/x-264 ! rtph264ppay ! udpsink host=127.0.0.1 port=5000
+ 1367  gst-launch-1.0 videotestsrc ! videoconvert ! video/x-264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1368  gst-launch-1.0 videotestsrc ! qtdemux ! udpsink host=127.0.0.1 port=5000
+ 1369  gst-launch-1.0 -v videotestsrc !  x264enc pass=qual quantizer=20 tune=zerolatency ! rtph264pay ! udpsink host=127.0.0.1 port=1234
+ 1370  gst-launch-1.0 -v videotestsrc ! rtph264pay ! udpsink host=127.0.0.1 port=1234
+ 1371  gst-launch-1.0 -v videotestsrc !  x264enc pass=qual quantizer=20 tune=zerolatency ! rtph264pay ! udpsink host=127.0.0.1 port=1234
+ 1372  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=192.1XX.XX.XX port=5000
+ 1373  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1374  is config
+ 1375  isconfig
+ 1376  ifconfig
+ 1377  ls
+ 1378  nano j_inf.sh
+ 1379  $(USER)
+ 1380  USER
+ 1381  whoami
+ 1382  chmod +x ./j_inf.sh 
+ 1383  ./j_inf.sh 
+ 1384  sudo ./j_inf.sh 
+ 1385  rm -r jetson-inference/
+ 1386  sudo ./j_inf.sh 
+ 1387  sudo ldconfig
+ 1388  ls
+ 1389  cd jetson-inference/
+ 1390  ls
+ 1391  cd python/training/
+ 1392  ls
+ 1393  cd detection/
+ 1394  ls
+ 1395  cd ssd/
+ 1396  ls
+ 1397  cd ~/
+ 1398  ls
+ 1399  cp /IRIMG/ jetson-inference/
+ 1400  cp IRIMG/ jetson-inference/
+ 1401  cp -r IRIMG/ jetson-inference/
+ 1402  sudo cp -r IRIMG/ jetson-inference/
+ 1403  cd jetson-inference/
+ 1404  sudo rm -r IRIMG/
+ 1405  cd ..
+ 1406  sudo cp -r IRIMG/ jetson-inference/python/training/detection/ssd/data/
+ 1407  cd jetson-inference/python/training/detection/ssd/
+ 1408  ls
+ 1409  ython3 open_images_downloader.py --max-images=10 --class-names "Apple,Orange,Banana,Strawberry,Grape,Pear,Pineapple,Watermelon" --data=data/fruit
+ 1410  python3 open_images_downloader.py --max-images=10 --class-names "Apple,Orange,Banana,Strawberry,Grape,Pear,Pineapple,Watermelon" --data=data/fruit
+ 1411  wget https://nvidia.box.com/shared/static/djf5w54rjvpqocsiztzaandq1m3avr7c.pth -O models/mobilenet-v1-ssd-mp-0_675.pth
+ 1412  sudo wget https://nvidia.box.com/shared/static/djf5w54rjvpqocsiztzaandq1m3avr7c.pth -O models/mobilenet-v1-ssd-mp-0_675.pth
+ 1413  pip3 install -v -r requirements.txt
+ 1414  python3 open_images_downloader.py --max-images=20 --class-names "Apple,Orange" --data=data/frui
+ 1415  python3 open_images_downloader.py --max-images=20 --class-names "Apple,Orange" --data=data/fruit
+ 1416  sudo python3 open_images_downloader.py --max-images=20 --class-names "Apple,Orange" --data=data/fruit
+ 1417  mv tracd d
+ 1418  cd data/
+ 1419  ls
+ 1420  cd IRIMG/
+ 1421  ls
+ 1422  mv train_person/ train/
+ 1423  sudo mv train_person/ train/
+ 1424  ls
+ 1425  cd ~
+ 1426  ls
+ 1427  sudo chown -R $USER jetson-inference/
+ 1428  cd jetson-inference/python/training/detection/ssd/
+ 1429  ls
+ 1430  python3 train_ssd.py --data=data/IRIMG --model-dir=models/IRIMG --batch-size=4 --epochs=3
+ 1431  python3 train_ssd.py --data=data/fruit --model-dir=models/fruit --batch-size=4 --epochs=30
+ 1432  python3 train_ssd.py --data=data/fruit --model-dir=models/fruit --batch-size=4 --epochs=3
+ 1433  ./detectnet.py --network=ssd-mobilenet-v2 images/peds_0.jpg images/test/output.jpg
+ 1434  ls
+ 1435  cd ..
+ 1436  ls
+ 1437  cd ~/jetson-inference/data/images/test/
+ 1438  V
+ 1439  ./detectnet.py --network=ssd-mobilenet-v2 images/peds_0.jpg images/test/output.jpg
+ 1440  cd ..
+ 1441  ./detectnet.py --network=ssd-mobilenet-v2 images/peds_0.jpg images/test/output.jpg
+ 1442  python3 detectnet.py --network=ssd-mobilenet-v2 images/peds_0.jpg images/test/output.jpg
+ 1443  ls
+ 1444  cd images/
+ 1445  ls
+ 1446  cd test/
+ 1447  cd ..
+ 1448  ./detectnet --network=ssd-mobilenet-v2 images/peds_0.jpg images/test/output.jpg
+ 1449  cd ..
+ 1450  cd python/examples/
+ 1451  ls
+ 1452  ./detectnet --network=ssd-mobilenet-v2 images/peds_0.jpg images/test/output.jpg
+ 1453  python3 detectnet.py --network=ssd-mobilenet-v2 images/peds_0.jpg images/test/output.jpg
+ 1454  python3 detectnet.py --network=ssd-mobilenet-v2 ../data/images/peds_0.jpg images/test/output.jpg
+ 1455  python3 detectnet.py --network=ssd-mobilenet-v2 ../../data/images/peds_0.jpg images/test/output.jpg
+ 1456  python3 detectnet.py --network=ssd-mobilenet-v2 ../../data/images/peds_0.jpg ioutput.jpg
+ 1457  python3 train_ssd.py --data=data/fruit --model-dir=models/fruit --batch-size=4 --epochs=3
+ 1458  cd jetson-in
+ 1459  ls
+ 1460  nano labels.txt
+ 1461  sudo apt update
+ 1462  sudo apt install xfce4 xfce4-goodies
+ 1463  exit
+ 1464  sudo dpkg-i VNC-Server-6.7.2-Linux-x86.deb 
+ 1465  sudo dpkg -i VNC-Server-6.7.2-Linux-x86.deb 
+ 1466  sudo apt install tightvncserver
+ 1467  sudo apt --fix-broken install
+ 1468  sudo apt install tightvncserver
+ 1469  vncserver
+ 1470  exit
+ 1471  vncserver
+ 1472  sudo nmcli
+ 1473  sudo apt install vino
+ 1474  mkdir -p ~/.config/autostart
+ 1475  cp /usr/share/applications/vino-server.desktop ~/.config/autostart
+ 1476  gsettings set org.gnome.Vino prompt-enabled false
+ 1477  gsettings set org.gnome.Vino require-encryption false
+ 1478  gsettings set org.gnome.Vino authentication-methods "['vnc']"
+ 1479  gsettings set org.gnome.Vino vnc-password $(echo -n 'RMNV@23654'|base64)
+ 1480  sudo reboot
+ 1481  ifconfig
+ 1482  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! queue ! rtph264depay ! h264parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
+ 1483  ./inferlive exp.plan "filesrc location=gopro.mp4 ! qtdemux ! h264parse ! omxh264dec ! nvvidconv ! video/x-raw,format=BGRx ! videoconvert ! queue ! video/x-raw, format=BGR ! appsink"
+ 1484  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! queue ! rtph264depay ! h264parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
+ 1485  ./export final_80000.onnx exp_80000.plan
+ 1486  ./infervideo exp_80000.plan gopro.mp4 out_80000.mp4
+ 1487  ./infervideo exp_80000.plan gopro.mp4
+ 1488  ./inferlive exp_80000.plan gopro.mp4
+ 1489  ./inferlive exp_80000.plan 100m-1.mp4
+ 1490  ./inferlive exp_80000.plan human.mp4
+ 1491  ./inferlive exp.plan human.mp4
+ 1492  ./export final_100000.onnx exp_100000.plan
+ 1493  ./inferlive exp_100000.plan human.mp4
+ 1494  ./inferlive exp_100000.plan gopro.mp4
+ 1495  ./inferlive exp_100000.plan gopro.mp4 t.mp4
+ 1496  ./infervideo exp_100000.plan gopro.mp4 t.mp4
+ 1497  ./infervideo exp_100000.plan human.mp4 t.mp4
+ 1498  ./infervideo exp_100000.plan gopro.mp4 t1.mp4
+ 1499  ./inferlive exp.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! queue ! rtph264depay ! h264parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
+ 1500  ./inferlive exp_100000.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! queue ! rtph264depay ! h264parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
+ 1501  ./infervideo exp_100000.plan human.mp4 t.mp4
+ 1502  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1503  make
+ 1504  ./infervideo exp_100000.plan human.mp4 t.mp4
+ 1505  ./infervideo exp_100000.plan 50m-movement.mp4 t.mp4
+ 1506  ./inferlive exp_100000.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! queue ! rtph264depay ! h264parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
+ 1507  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1508  cd build
+ 1509  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1510  make
+ 1511  ./infervideo exp_100000.plan human.mp4 t.mp4
+ 1512  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1513  make
+ 1514  ./infervideo exp_100000.plan human.mp4 t.mp4
+ 1515  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1516  make
+ 1517  ls
+ 1518  cmake -DCMAKE_CUDA_FLAGS="--expt-extended-lambda -std=c++14" ..
+ 1519  make
+ 1520  ./infervideo exp.plan human.mp4 t.mp4
+ 1521  gst-launch-1.0 -v filesrc location = gopro.mp4 ! decodebin ! x264enc ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1522  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1523  gst-launch-1.0 -v filesrc location = human.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1524  gst-launch-1.0 -v filesrc location = 50m-movement.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1525  ./inferlive exp_100000.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! queue ! rtph264depay ! h264parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
+ 1526  cd ~
+ 1527  cd retina/
+ 1528  cd extras/cppapi/build
+ 1529  ./inferlive exp_100000.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! queue ! rtph264depay ! h264parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
+ 1530  gst-launch-1.0 -v filesrc location = 100m-1.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1531  gst-launch-1.0 -v filesrc location = infrared.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1532  gst-launch-1.0 -v filesrc location = gopro.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1533  gst-launch-1.0 -v filesrc location = 50m-movement.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1534  gst-launch-1.0 -v filesrc location = rtsp://192.168.10.12:8554/fpv_stream ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1535  gst-launch-1.0 -v uri = rtsp://192.168.10.12:8554/fpv_stream ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1536  gst-launch-1.0 -v rtspsrc uri = rtsp://192.168.10.12:8554/fpv_stream ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1537  gst-launch-1.0 -v rtspsrc location = rtsp://192.168.10.12:8554/fpv_stream ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1538  gst-launch-1.0 -v rtspsrc uri = rtsp://192.168.10.12:8554/fpv_stream ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1539  ./inferlive exp_100000.plan 
+ 1540  ./inferlive exp_100000.plan rtsp://192.168.10.12:8554/fpv_stream
+ 1541  vncserver
+ 1542  ls
+ 1543  git status
+ 1544  git remote add https://github.com/anurag8786/retinanet-examples.git
+ 1545  git remote add https://github.com/anurag8786/retinanet-examples.git retina-adverto
+ 1546  git remote add retina-adverto https://github.com/anurag8786/retinanet-examples.git
+ 1547  git add .
+ 1548  git commit -m "New start- pushed to cloud"
+ 1549  git config --global user.email "anurag8786@gmail.com"
+ 1550  git config --global user.name "anurag"
+ 1551  git commit -m "New start- pushed to cloud"
+ 1552  git push retina-adverto main
+ 1553  git push retina-adverto 20.03:
+ 1554  git push retina-adverto 20.03:main
+ 1555  git push retina-adverto 20.03:retina-adverto
+ 1556  sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+ 1557  sudo apt-get update
+ 1558  sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+ 1559  snap install mosquitto
+ 1560  cd ..
+ 1561  git clone https://github.com/eclipse/paho.mqtt.c.git
+ 1562  sudo apt-get install build-essential gcc make cmake cmake-gui cmake-curses-gui
+ 1563  sudo git clone https://github.com/eclipse/paho.mqtt.c.git
+ 1564  cd paho.mqtt.c
+ 1565  git checkout v1.3.8
+ 1566  cmake -Bbuild -H. -DPAHO_ENABLE_TESTING=OFF -DPAHO_BUILD_STATIC=ON     -DPAHO_WITH_SSL=ON -DPAHO_HIGH_PERFORMANCE=ON
+ 1567  ls
+ 1568  open .
+ 1569  cd ..
+ 1570  ls
+ 1571  pwd
+ 1572  ls
+ 1573  cd nx64
+ 1574  ls
+ 1575  cd /home/paho.mqtt.c/
+ 1576  ls
+ 1577  cd ..
+ 1578  ls
+ 1579  rm -r paho.mqtt.c/
+ 1580  ls
+ 1581  git clone https://github.com/eclipse/paho.mqtt.c.git
+ 1582  cd paho.mqtt.c
+ 1583  cd ..
+ 1584  sudo rm - paho.mqtt.c
+ 1585  sudo rm - paho.mqtt.c/
+ 1586  ls
+ 1587  git clone https://github.com/eclipse/paho.mqtt.cpp
+ 1588  cd paho.mqtt.cpp
+ 1589  cmake -Bbuild -H. -DPAHO_BUILD_STATIC=ON     -DPAHO_BUILD_DOCUMENTATION=TRUE -DPAHO_BUILD_SAMPLES=TRUE
+ 1590  cd /etc/systemd/system
+ 1591  ls
+ 1592  git checkout mqtt
+ 1593  git pull retina-adverto mqtt
+ 1594  git branch
+ 1595  git branch -a
+ 1596  ./inferlive exp_100000.plan rtsp://192.168.10.12:8554/fpv_stream
+ 1597  ./inferlive exp_100000.plan rtsp://192.168.0.1:8554/fpv_stream
+ 1598  ./inferlive exp_100000.plan rtsp://192.168.0.10:8554/fpv_stream
+ 1599  ./inferlive exp_100000.plan rtsp://192.168.0.10:8554/H264Video
+ 1600  ./inferlive exp_100000.plan rtsp://192.168.43.1:8554/fpv_stream
+ 1601  ./inferlive exp_100000.plan "udpsrc port=5000 caps = \"application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96\" ! queue ! rtph264depay ! h264parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
+ 1602  infer
+ 1603  gst-launch-1.0 -v rtspsrc location = rtsp://192.168.10.12:8554/fpv_stream ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1604  gst-launch-1.0 -v filesrc location = 50m-movement.mp4 ! qtdemux ! video/x-h264 ! rtph264pay ! udpsink host=127.0.0.1 port=5000
+ 1605  ./inferlive exp_100000.plan rtsp://192.168.43.1:8554/fpv_stream
+ 1606  cd build
+ 1607  ./inferlive exp_100000.plan rtsp://192.168.43.1:8554/fpv_stream
+ 1608  ./inferlive exp_100000.plan rtsp://100.66.127.169:5540/ch0
+ 1609  gst-launch 1.0 rtspsrc location=rtsp://100.66.127.169:5540/ch0
+ 1610  gst-launch-1.0 rtspsrc location=rtsp://100.66.127.169:5540/ch0
+ 1611  gst-launch-1.0 rtspsrc location=rtsp://100.66.127.169:5540/ch0 ! fakesink
+ 1612  gst-launch-1.0 rtspsrc location=rtsp://100.66.127.169:5540/ch0 ! autovideosink
+ 1613  gst-launch-1.0 rtspsrc location=rtsp://100.66.127.169:5540/ch0 latency=300 ! decodebin ! autovideosink
+ 1614  ./inferlive exp_100000.plan "rtspsrc location=rtsp://100.66.127.169:5540/ch0 latency=300 ! decodebin ! autovideosink"
+ 1615  ./inferlive exp_100000.plan "rtspsrc location=rtsp://100.66.127.169:5540/ch0 latency=300 ! decodebin ! appsink"
+ 1616  ./inferlive exp_100000.plan "rtspsrc location=rtsp://100.66.127.169:5540/ch0 latency=300 ! decodebin ! autovideosink ! queue ! rtph264depay ! h264parse ! nvv4l2decoder ! nvvidconv ! video/x-raw, format=BGRx ! videoconvert ! video/x-raw, format=BGR ! appsink"
+ 1617  git status
+ 1618  git remote -v
+ 1619  git log -p
+ 1620  gst-inspect-1.0 
+ 1621  gst-inspect-1.0 | grep nv
+ 1622  history
+ 1623  history > history.txt
