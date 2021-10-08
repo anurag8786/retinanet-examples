@@ -121,13 +121,19 @@ int main(int argc, char *argv[]) {
 		for (int i = 0; i < num_det; i++) {
 			// Show results over confidence threshold
 			if (scores[i] >= threshold) {
-				float x1 = boxes[i*4+0];
-				float y1 = boxes[i*4+1];
-				float x2 = boxes[i*4+2];
-				float y2 = boxes[i*4+3];
+				int x1 = boxes[i*4+0];
+				int y1 = boxes[i*4+1];
+				int x2 = boxes[i*4+2];
+				int y2 = boxes[i*4+3];
 				int cls=classes[i];
 				// Draw bounding box on image
 				cv::rectangle(resized_frame, Point(x1, y1), Point(x2, y2), cv::Scalar(blues[cls], greens[cls], reds[cls]));
+				string label = format("%.2f", scores[i]);
+				int baseLine;
+				Size labelSize = getTextSize(label, FONT_HERSHEY_SIMPLEX, 0.5, 1, &baseLine);
+				y1 = max(y1, labelSize.height);
+				//cv::rectangle(resized_frame, Point(x1, int(y1 - round(1.5*labelSize.height))), Point((x1 + int(round(1.5*labelSize.width)), (y1 + baseLine)), cv::Scalar(255, 255, 255), FILLED);
+				putText(resized_frame, label, Point(x1, y1), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(blues[cls], greens[cls], reds[cls]),1);
 			}
 		}
 		cv::resize(resized_frame, inferred_frame, Size(fw, fh));
