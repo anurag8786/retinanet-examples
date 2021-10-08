@@ -11,20 +11,39 @@
 
 #include <cuda_runtime.h>
 
+#include "mqtt/async_client.h"
+
 #include "../../csrc/engine.h"
 
 using namespace std;
 using namespace cv;
 
+const std::string DFLT_ADDRESS { "tcp://localhost:1883" };
+const std::string CLIENT_ID { "paho-cpp-data-publish" };
+
+const string TOPIC { "Test" };
+const int	 QOS = 1;
+
 int main(int argc, char *argv[]) {
-	if (argc != 4) {
-		cerr << "Usage: " << argv[0] << " engine.plan input.mov output.mp4" << endl;
+	string address = (argc > 1) ? string(argv[1]) : DFLT_SERVER_ADDRESS;
+
+	cout << "Initializing for server '" << address << "'..." << endl;
+	mqtt::async_client cli(address, "");
+
+	cout << "\nConnecting..." << endl;
+	cli.connect()->wait();
+
+	if (argc != 3) {
+		cerr << "Usage: " << argv[0] << " engine.plan input.mov [Optional]threshold between 0-1" << endl;
 		return 1;
 	}
 
 	cout << "Loading engine..." << endl;
 	auto engine = retinanet::Engine(argv[1]);
 	VideoCapture src(argv[2]);
+	cout << "Enter Threshold [0-1] : "<< endl;
+	double threshold;
+	cin >> threshold;
 
 	if (!src.isOpened()){
 		cerr << "Could not read " << argv[2] << endl;
@@ -36,8 +55,7 @@ int main(int argc, char *argv[]) {
 	auto fps=src.get(CAP_PROP_FPS);
 	auto nframes=src.get(CAP_PROP_FRAME_COUNT);
 
-	VideoWriter sink;
-	sink.open(argv[3], 0x31637661, fps, Size(fw, fh));
+	clock_t start, end;
 	Mat frame;
 	Mat resized_frame;
 	Mat inferred_frame;
@@ -52,9 +70,9 @@ int main(int argc, char *argv[]) {
 	cudaMalloc(&boxes_d, num_det * 4 * sizeof(float));
 	cudaMalloc(&classes_d, num_det * sizeof(float));
 
-	unique_ptr<float[]> scores(new float[num_det]);
-	unique_ptr<float[]> boxes(new float[num_det * 4]);
-	unique_ptr<float[]> classes(new float[num_det]);
+	auto scores = new float[num_det];
+	auto boxes = new float[num_det * 4];
+	auto classes = new float[num_det];
 
 	vector<float> mean {0.485, 0.456, 0.406};
 	vector<float> std {0.229, 0.224, 0.225};
@@ -66,19 +84,19 @@ int main(int argc, char *argv[]) {
 	int channels = 3;
 	vector<float> img;
 	vector<float> data (channels * inputSize[0] * inputSize[1]);
+	cout <<"Resolution" << inputSize[0] << "*" << inputSize[1] << endl;
+	String window_name = "Output Stream";
 
-	while(1)
-	{
+	namedWindow(window_name, WINDOW_NORMAL);
+
+	while (1){
+		start = clock();
 		src >> frame;
 		if (frame.empty()){
 			cout << "Finished inference!" << endl;
 			break;
 		}
 
-		if (count == nframes){
-			cout << "Finished inference Trick!" << endl;
-			break;
-		}
 		cv::resize(frame, resized_frame, Size(inputSize[1], inputSize[0]));
 		cv::Mat pixels;
 		resized_frame.convertTo(pixels, CV_32FC3, 1.0 / 255, 0);
@@ -95,20 +113,22 @@ int main(int argc, char *argv[]) {
 		size_t dataSize = data.size() * sizeof(float);
 		cudaMemcpy(data_d, data.data(), dataSize, cudaMemcpyHostToDevice);
 
+		
 		//Do inference
-		cout << "Inferring on frame: " << count <<"/" << nframes << endl;
+		
+		cout << "Inferring on frame: " << count <<"/" << nframes << "             ";
 		count++;
 		vector<void *> buffers = { data_d, scores_d, boxes_d, classes_d };
-		engine.infer(buffers);
+		engine.infer(buffers, 1);
 
-		cudaMemcpy(scores.get(), scores_d, sizeof(float) * num_det, cudaMemcpyDeviceToHost);
-		cudaMemcpy(boxes.get(), boxes_d, sizeof(float) * num_det * 4, cudaMemcpyDeviceToHost);
-		cudaMemcpy(classes.get(), classes_d, sizeof(float) * num_det, cudaMemcpyDeviceToHost);
+		cudaMemcpy(scores, scores_d, sizeof(float) * num_det, cudaMemcpyDeviceToHost);
+		cudaMemcpy(boxes, boxes_d, sizeof(float) * num_det * 4, cudaMemcpyDeviceToHost);
+		cudaMemcpy(classes, classes_d, sizeof(float) * num_det, cudaMemcpyDeviceToHost);
 
 		// Get back the bounding boxes
 		for (int i = 0; i < num_det; i++) {
 			// Show results over confidence threshold
-			if (scores[i] >= 0.2f) {
+			if (scores[i] >= threshold) {
 				float x1 = boxes[i*4+0];
 				float y1 = boxes[i*4+1];
 				float x2 = boxes[i*4+2];
@@ -117,15 +137,38 @@ int main(int argc, char *argv[]) {
 				// Draw bounding box on image
 				cv::rectangle(resized_frame, Point(x1, y1), Point(x2, y2), cv::Scalar(blues[cls], greens[cls], reds[cls]));
 			}
+
+			try {
+				cout << "\nPublishing message..." << endl;
+
+				mqtt::topic top(cli, "test", QOS);
+				mqtt::token_ptr tok;
+
+				tok = top.publish("x1: " + x1 + ", y1: " + y1 + ", x2: " + x2 + ", y2: " + y2);
+				tok->wait();	// Just wait for the last one to complete.
+			}
+			catch (const mqtt::exception& exc) {
+				cerr << exc << endl;
+				return 1;
+			}
+
 		}
+
+		// Disconnect
+		cout << "\nDisconnecting..." << endl;
+		cli.disconnect()->wait();
+
 		cv::resize(resized_frame, inferred_frame, Size(fw, fh));
-		sink.write(inferred_frame);
+		imshow(window_name, inferred_frame);
+		if (waitKey(10) ==27){
+			cout << "Esc key is presses. Stopping the VIdeo" << endl;
+			break;
+		}
+		end = clock();
+		double t_t = double(end-start) / double(CLOCKS_PER_SEC);
+		double out_fps = 1/t_t;
+		cout << "FPS of Output Stream : " << fixed << out_fps <<setprecision(2) << endl;
 	}
 	src.release();
-	sink.release();
-	cudaFree(data_d);
-	cudaFree(scores_d);
-	cudaFree(boxes_d);
-	cudaFree(classes_d);
 	return 0;
 }

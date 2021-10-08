@@ -75,10 +75,6 @@ int main(int argc, char *argv[]) {
 			break;
 		}
 
-		if (count == nframes){
-			cout << "Finished inference Trick!" << endl;
-			break;
-		}
 		cv::resize(frame, resized_frame, Size(inputSize[1], inputSize[0]));
 		cv::Mat pixels;
 		resized_frame.convertTo(pixels, CV_32FC3, 1.0 / 255, 0);

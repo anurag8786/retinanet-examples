@@ -17,14 +17,18 @@ using namespace std;
 using namespace cv;
 
 int main(int argc, char *argv[]) {
-	if (argc != 4) {
-		cerr << "Usage: " << argv[0] << " engine.plan input.mov output.mp4" << endl;
+	if (argc != 2) {
+		cerr << "Usage: " << argv[0] << " engine.plan input.mov [Optional]threshold between 0-1"  << endl;
 		return 1;
 	}
 
 	cout << "Loading engine..." << endl;
 	auto engine = retinanet::Engine(argv[1]);
-	VideoCapture src(argv[2]);
+	VideoCapture src(0);
+
+	cout << "Enter Threshold [0-1] : "<< endl;
+	double threshold;
+	cin >> threshold;
 
 	if (!src.isOpened()){
 		cerr << "Could not read " << argv[2] << endl;
@@ -36,14 +40,16 @@ int main(int argc, char *argv[]) {
 	auto fps=src.get(CAP_PROP_FPS);
 	auto nframes=src.get(CAP_PROP_FRAME_COUNT);
 
-	VideoWriter sink;
-	sink.open(argv[3], 0x31637661, fps, Size(fw, fh));
+	clock_t start, end;
 	Mat frame;
 	Mat resized_frame;
 	Mat inferred_frame;
 	int count=1;
 
 	auto inputSize = engine.getInputSize();
+	//inputSize[0] = inputSize[0]/2;
+	//inputSize[1] = inputSize[1]/2;
+
 	// Create device buffers
 	void *data_d, *scores_d, *boxes_d, *classes_d;
 	auto num_det = engine.getMaxDetections();
@@ -67,18 +73,23 @@ int main(int argc, char *argv[]) {
 	vector<float> img;
 	vector<float> data (channels * inputSize[0] * inputSize[1]);
 
+	cout <<"Resolution" << inputSize[0] << "*" << inputSize[1] << endl;
+	String window_name = "Output Stream";
+
+	namedWindow(window_name, WINDOW_NORMAL);
+	//Mat image(inputSize[0],inputSize[1], CV_8UC3, Scalar(0,0,0));
+
 	while(1)
 	{
+		start = clock();
 		src >> frame;
+		//frame = image;
 		if (frame.empty()){
 			cout << "Finished inference!" << endl;
 			break;
 		}
 
-		if (count == nframes){
-			cout << "Finished inference Trick!" << endl;
-			break;
-		}
+		//cv::resize(frame, resized_frame, Size(512,512));
 		cv::resize(frame, resized_frame, Size(inputSize[1], inputSize[0]));
 		cv::Mat pixels;
 		resized_frame.convertTo(pixels, CV_32FC3, 1.0 / 255, 0);
@@ -108,7 +119,7 @@ int main(int argc, char *argv[]) {
 		// Get back the bounding boxes
 		for (int i = 0; i < num_det; i++) {
 			// Show results over confidence threshold
-			if (scores[i] >= 0.2f) {
+			if (scores[i] >= threshold) {
 				float x1 = boxes[i*4+0];
 				float y1 = boxes[i*4+1];
 				float x2 = boxes[i*4+2];
@@ -119,10 +130,17 @@ int main(int argc, char *argv[]) {
 			}
 		}
 		cv::resize(resized_frame, inferred_frame, Size(fw, fh));
-		sink.write(inferred_frame);
+		imshow(window_name, inferred_frame);
+		if (waitKey(10) ==27){
+			cout << "Esc key is presses. Stopping the VIdeo" << endl;
+			break;
+		}
+		end = clock();
+		double t_t = double(end-start) / double(CLOCKS_PER_SEC);
+		double out_fps = 1/t_t;
+		cout << "FPS of Output Stream : " << fixed << out_fps <<setprecision(2) << endl;
 	}
 	src.release();
-	sink.release();
 	cudaFree(data_d);
 	cudaFree(scores_d);
 	cudaFree(boxes_d);

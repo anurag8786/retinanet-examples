@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.9 FATAL_ERROR)
 
 project(retinanet_infer LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CUDA_COMPILER /usr/local/cuda/bin/nvcc)
 find_package(CUDA REQUIRED)
 enable_language(CUDA)
 find_package(OpenCV REQUIRED)
@@ -45,3 +46,17 @@ if(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64")
   include_directories(${OpenCV_INCLUDE_DIRS})
   target_link_libraries(infervideo PRIVATE retinanet ${OpenCV_LIBS} cuda ${CUDA_LIBRARIES})
 endif()
+
+if(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64")
+  add_executable(inferlive inferlive.cpp)
+  include_directories(${OpenCV_INCLUDE_DIRS})
+  target_link_libraries(inferlive PRIVATE retinanet ${OpenCV_LIBS} cuda ${CUDA_LIBRARIES})
+endif()
+
+if(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64")
+  add_executable(infercam infercam.cpp)
+  include_directories(${OpenCV_INCLUDE_DIRS})
+  target_link_libraries(infercam PRIVATE retinanet ${OpenCV_LIBS} cuda ${CUDA_LIBRARIES})
+endif()
+
+
