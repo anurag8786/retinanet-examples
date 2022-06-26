@@ -85,7 +85,9 @@ $ sudo make
 Download the onnx model file in same folder (~/retinanet-examples/extras/cppapi/build)
 
 ```bash
-
+https://drive.google.com/drive/folders/10KV77CsuVaoF5zhLLaHEW4d9CTxrsve-?usp=sharing
+#Download both files 'final.onnx' & 'cut.mp4' from the given drive link and place it in the following path "/home/nvidia/retinanet-examples/extras/cppapi/build/"
+/home/nvidia/retinanet-examples/extras/cppapi/build/
 ```
 
 Convert the onnx model to plan engine (optimised model) file, this will take around 10-15 mins

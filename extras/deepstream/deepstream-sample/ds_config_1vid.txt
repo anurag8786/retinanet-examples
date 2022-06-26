@@ -62,7 +62,7 @@ gpu-id=0
 
 [osd]
 enable=1
-display-text=1
+display-text=0
 gpu-id=0
 border-width=2
 text-size=12
@@ -104,7 +104,7 @@ ll-config-file=/opt/nvidia/deepstream/deepstream-5.0/samples/configs/deepstream-
 gpu-id=0
 
 [ds-example]
-enable=1
+enable=0
 processing-width=640
 processing-height=480
 nvbuf-memory-type=3
