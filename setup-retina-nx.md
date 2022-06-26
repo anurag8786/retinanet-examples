@@ -145,6 +145,15 @@ $ sudo make install
 LD_PRELOAD=/home/nvidia/retinanet-examples/extras/deepstream/deepstream-sample/build/libnvdsparsebbox_retinanet.so /opt/nvidia/deepstream/deepstream-5.0/sources/apps/sample_apps/deepstream-app/deepstream-app -c /home/nvidia/retinanet-examples/extras/deepstream/deepstream-sample/ds_config_1vid.txt
 ```
 
+### Save image & bounding box co-ordinates
+
+```bash
+# To enable saving of image & bounding box coordinates look for [ds-example] property in the bottom of ds_config_1vid.txt and set enable=1
+
+$ sudo nano /home/nvidia/retinanet-examples/extras/deepstream/deepstream-sample/ds_config_1vid.txt
+
+#The images will be stored in /home/nvidia/retinanet-examples/frames/images and the bounding box coordinates will be stored in /home/nvidia/retinanet-examples/frames/annotations
+```
 
 
 
