@@ -9,6 +9,7 @@
 [application]
 enable-perf-measurement=1
 perf-measurement-interval-sec=1
+gie-kitti-output-dir=/home/nvidia/retinanet-examples/frames/annotations
 
 [tiled-display]
 enable=0
@@ -22,13 +23,13 @@ gpu-id=0
 enable=1
 type=2
 num-sources=1
-uri=file://<path>
+uri=file:///home/nvidia/retinanet-examples/extras/cppapi/build/cut.mp4
 gpu-id=0
 
 [streammux]
 gpu-id=0
 batch-size=1
-batched-push-timeout=-1
+batched-push-timeout=40000
 ## Set muxer output width and height
 width=1280
 height=720
@@ -36,7 +37,7 @@ cuda-memory-type=1
 enable-padding=1
 
 [sink0]
-enable=1
+enable=0
 type=3
 #1=mp4 2=mkv
 container=1
@@ -49,24 +50,26 @@ output-file=<path>
 source-id=0
 
 [sink1]
-enable=0
+enable=1
 #Type - 1=FakeSink 2=EglSink 3=File
 type=2
-sync=1
+sync=0
+overlay-id=1
 source-id=0
 gpu-id=0
-cuda-memory-type=1
+#cuda-memory-type=1
 
 
 [osd]
 enable=1
+display-text=1
 gpu-id=0
 border-width=2
 text-size=12
 text-color=1;1;1;1;
 text-bg-color=0.3;0.3;0.3;1
 font=Arial
-show-clock=0
+show-clock=1
 clock-x-offset=800
 clock-y-offset=820
 clock-text-size=12
@@ -77,7 +80,38 @@ enable=1
 gpu-id=0
 batch-size=1
 gie-unique-id=1
-interval=0
+interval=7
 labelfile-path=labels_coco.txt
-model-engine-file=<path>
+model-engine-file=/home/nvidia/retinanet-examples/extras/cppapi/build/final.plan
 config-file=infer_config_batch1.txt
+
+[class-attrs-all]
+pre-cluster-threshold=0.2
+eps=0.2
+group-threshold=1
+
+[tracker]
+enable=1
+enable-past-frame=1
+tracker-width=960
+tracker-height=544
+display-tracking-id=1
+#ll-lib-file=/opt/nvidia/deepstream/deepstream-5.0/lib/libnvds_mot_klt.so
+ll-lib-file=/opt/nvidia/deepstream/deepstream-5.0/lib/libnvds_mot_iou.so
+#ll-lib-file=/opt/nvidia/deepstream/deepstream-5.0/lib/libnvds_nvdcf.so
+#ll-config-file=/opt/nvidia/deepstream/deepstream-5.0/samples/configs/deepstream-app/#tracker_config.yml
+ll-config-file=/opt/nvidia/deepstream/deepstream-5.0/samples/configs/deepstream-app/iou_config.txt
+gpu-id=0
+
+[ds-example]
+enable=1
+processing-width=640
+processing-height=480
+nvbuf-memory-type=3
+blur-objects=0
+full-frame=1
+#batch-size for batch supported optimized plugin
+#batch-size=3
+unique-id=15
+gpu-id=0
+

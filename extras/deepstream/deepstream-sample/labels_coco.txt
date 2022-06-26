@@ -1,6 +1,6 @@
 person
-bicycle
-car
+others
+human
 motorcycle
 airplane
 bus
