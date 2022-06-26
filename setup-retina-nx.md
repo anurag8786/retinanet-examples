@@ -66,7 +66,7 @@ $ git clone https://github.com/anurag8786/retinanet-examples.git
 
 ```bash
 $ cd retinanet-examples
-$ git checkout retina-adverto
+$ git checkout retina-nx
 $ cd extras/cppapi/
 ```
 
